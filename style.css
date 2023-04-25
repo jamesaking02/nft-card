@@ -18,7 +18,7 @@ body {
   padding: 1.3em;
   border-radius: 1em;
   width: 90%;
-  margin: 3em auto;
+  margin: 2em auto;
 }
 
 /* image overlay */
@@ -148,7 +148,7 @@ span, p:nth-of-type(2) {
 @media (min-width: 1440px) {
   .card {
     width: 20%;
-    margin: 10em auto;
+    place-self: center end;
   }
 
 }
