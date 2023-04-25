@@ -147,7 +147,7 @@ span, p:nth-of-type(2) {
 /* Desktop Styles */
 @media (min-width: 1440px) {
   .card {
-    width: 17%;
+    width: 20%;
     margin: 10em auto;
   }
 
