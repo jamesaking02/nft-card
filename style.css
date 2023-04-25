@@ -104,8 +104,8 @@ li.price {
 }
 
 hr {
-  width: 100%;
   color: hsl(215, 32%, 27%);
+  width: 100%;
   margin-bottom: 1.5em;
 }
 
