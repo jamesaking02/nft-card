@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{box-sizing: border-box;}
+
+html {
+  background-color: hsl(217, 54%, 11%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.3em;
+  border-radius: 1em;
+  width: 90%;
+  margin: 3em auto;
+}
+
+/* image overlay */
+.images {
+  position: relative;
+  max-width: 100%;
+}
+
+.equil {
+  width: 100%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 1em;
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(178, 100%, 50%, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.icon {
+  position: absolute;
+  top: 43%;
+  left: 41%;
+}
+
+
+.images:hover .equil {
+  opacity: 0.6;
+}
+
+.images:hover .overlay {
+  opacity: 1;
+  
+}
+
+/*IMAGE OVERLAY //END//*/
+
+h2 {
+  color: white;
+}
+
+h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p:first-of-type {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+.row { /* laying out the two elements side by side using two columns */
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+ul {
+  padding: 0;
+  margin-top: 0;
+  list-style-position: inside;
+}
+
+li.time {
+  color: hsl(215, 51%, 70%);
+  text-align: end;
+  list-style-image: url(./images/icon-clock.svg);
+}
+
+li.price {
+  color: hsl(178, 100%, 50%);
+  list-style-image: url(./images/icon-ethereum.svg);
+}
+
+hr {
+  width: 100%;
+  color: hsl(215, 32%, 27%);
+  margin-bottom: 1.5em;
+}
+
+.creator {
+  display: grid;
+  grid-template-columns: 12% 1fr;
+  gap: 0 5%;
+}
+
+.avi {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 3em;
+}
+
+span {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator > p{
+  margin-top: 0.5em;
+  color: white;
+  white-space: nowrap;
+  text-align: left;
+}
+
+span, p:nth-of-type(2) {
+  font-weight: 300;
+}
+
+.creator > p:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* Desktop Styles */
+@media (min-width: 1440px) {
+  .card {
+    width: 17%;
+    margin: 10em auto;
+  }
+
+}
+
+
+
