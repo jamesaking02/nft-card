@@ -70,7 +70,7 @@ h2 {
   color: white;
 }
 
-h2:hover {
+a > h2:hover {
   color: hsl(178, 100%, 50%);
 }
 
@@ -121,11 +121,15 @@ hr {
   border-radius: 3em;
 }
 
+a {
+  text-decoration: none;
+}
+
 span {
   color: hsl(215, 51%, 70%);
 }
 
-.creator > p{
+.creator > a > p{
   margin-top: 0.5em;
   color: white;
   white-space: nowrap;
@@ -136,7 +140,7 @@ span, p:nth-of-type(2) {
   font-weight: 300;
 }
 
-.creator > p:hover {
+.creator > a > p:hover {
   color: hsl(178, 100%, 50%);
 }
 
